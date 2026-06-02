@@ -155,6 +155,38 @@ const config: Config = {
           "0%": { transform: "scaleY(0.2)" },
           "100%": { transform: "scaleY(1)" },
         },
+        "spotlight-sweep": {
+          "0%": { transform: "translateX(-30%) rotate(8deg)", opacity: "0" },
+          "20%": { opacity: "0.6" },
+          "80%": { opacity: "0.6" },
+          "100%": { transform: "translateX(130%) rotate(8deg)", opacity: "0" },
+        },
+        "particle-rise": {
+          "0%": { transform: "translateY(20px)", opacity: "0" },
+          "15%": { opacity: "0.7" },
+          "85%": { opacity: "0.7" },
+          "100%": { transform: "translateY(-120px)", opacity: "0" },
+        },
+        "pulse-ring": {
+          "0%": { transform: "scale(0.8)", opacity: "0.5" },
+          "100%": { transform: "scale(2.2)", opacity: "0" },
+        },
+        "hue-drift": {
+          "0%,100%": { opacity: "0.5", transform: "scale(1)" },
+          "50%": { opacity: "0.85", transform: "scale(1.08)" },
+        },
+        "god-ray": {
+          "0%,100%": { opacity: "0.25", transform: "scaleY(1) rotate(var(--ray-rot,0deg))" },
+          "50%": { opacity: "0.55", transform: "scaleY(1.06) rotate(var(--ray-rot,0deg))" },
+        },
+        "spin-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        "coin-flip": {
+          "0%,100%": { transform: "rotateY(0deg)" },
+          "50%": { transform: "rotateY(180deg)" },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.7s cubic-bezier(0.22,1,0.36,1) forwards",
@@ -166,6 +198,10 @@ const config: Config = {
         "aurora-slow": "aurora-slow 24s ease-in-out infinite",
         "ticker-blink": "ticker-blink 2s ease-in-out infinite",
         "draw-line": "draw-line 2.4s ease-out forwards",
+        "spotlight-sweep": "spotlight-sweep 9s ease-in-out infinite",
+        "hue-drift": "hue-drift 12s ease-in-out infinite",
+        "god-ray": "god-ray 10s ease-in-out infinite",
+        "spin-slow": "spin-slow 40s linear infinite",
       },
     },
   },
