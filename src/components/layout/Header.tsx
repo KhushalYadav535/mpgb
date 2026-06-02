@@ -50,16 +50,16 @@ export function Header() {
         <div className="container-px flex h-10 items-center justify-between text-xs">
           <div className="flex items-center gap-6">
             <span className="inline-flex items-center gap-2">
-              <Phone className="h-3.5 w-3.5 text-gold-400" /> Toll Free: 1800-200-1976
+              <Phone className="h-3.5 w-3.5 text-leaf-300" /> Toll Free: 1800 123 3313
             </span>
             <span className="text-white/40">|</span>
             <span>Customer care available 24 × 7</span>
           </div>
           <div className="flex items-center gap-6">
-            <Link href="/customer-service/grievance-redressal" className="transition-colors hover:text-gold-300">
+            <Link href="/customer-service/grievance-redressal" className="transition-colors hover:text-leaf-300">
               Grievance Redressal
             </Link>
-            <button className="inline-flex items-center gap-1.5 transition-colors hover:text-gold-300">
+            <button className="inline-flex items-center gap-1.5 transition-colors hover:text-leaf-300">
               <Globe className="h-3.5 w-3.5" /> English / हिंदी
             </button>
           </div>
@@ -115,11 +115,11 @@ export function Header() {
                             href={child.href}
                             className="group flex items-start gap-3 rounded-xl px-4 py-3 transition-colors hover:bg-white/5"
                           >
-                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-400/60 transition-all group-hover:scale-150 group-hover:bg-gold-400" />
+                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-leaf-400/70 transition-all group-hover:scale-150 group-hover:bg-leaf-400" />
                             <span className="flex-1">
                               <span className="flex items-center gap-1.5 text-sm font-semibold text-white">
                                 {child.label}
-                                <ArrowUpRight className="h-3.5 w-3.5 -translate-x-1 text-gold-400 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
+                                <ArrowUpRight className="h-3.5 w-3.5 -translate-x-1 text-leaf-300 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
                               </span>
                               {child.desc && (
                                 <span className="mt-0.5 block text-xs text-white/50">
@@ -140,7 +140,7 @@ export function Header() {
           <div className="flex items-center gap-3">
             <Link
               href="/net-banking/login"
-              className="hidden items-center gap-2 rounded-full bg-gold-sheen bg-[length:200%_auto] px-5 py-2.5 text-sm font-semibold text-ink-900 shadow-gold transition-all duration-300 hover:bg-right hover:shadow-lift sm:inline-flex"
+              className="hidden items-center gap-2 rounded-full bg-brand-sheen bg-[length:180%_auto] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_12px_30px_-8px_rgba(32,118,230,0.6)] transition-all duration-300 hover:bg-right hover:shadow-lift sm:inline-flex"
             >
               <Lock className="h-4 w-4" /> Net Banking
             </Link>
@@ -182,7 +182,7 @@ export function Header() {
           </nav>
           <Link
             href="/net-banking/login"
-            className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-gold-sheen bg-[length:200%_auto] px-5 py-3.5 text-sm font-semibold text-ink-900 shadow-gold"
+            className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-brand-sheen bg-[length:180%_auto] px-5 py-3.5 text-sm font-semibold text-white shadow-[0_12px_30px_-8px_rgba(32,118,230,0.6)]"
           >
             <Lock className="h-4 w-4" /> Login to Net Banking
           </Link>

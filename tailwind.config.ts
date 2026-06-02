@@ -50,6 +50,33 @@ const config: Config = {
           900: "#420a24",
           950: "#2a0517",
         },
+        // MPGB brand blue — taken from the official logo
+        brand: {
+          50: "#eef6ff",
+          100: "#d9ecff",
+          200: "#b6dbff",
+          300: "#84c1ff",
+          400: "#4f9bf5",
+          500: "#2076e6",
+          600: "#135ccb",
+          700: "#1247a0",
+          800: "#143d82",
+          900: "#102f63",
+          950: "#0a1f47",
+        },
+        // MPGB leaf green — the growth accent from the logo mark
+        leaf: {
+          50: "#eefcec",
+          100: "#d6f6d2",
+          200: "#aeeca6",
+          300: "#79dc6e",
+          400: "#4cc23f",
+          500: "#34a82a",
+          600: "#258620",
+          700: "#1f691d",
+          800: "#1d531c",
+          900: "#194619",
+        },
         emerald: {
           DEFAULT: "#0f7a5a",
           soft: "#1aa37a",
@@ -74,6 +101,10 @@ const config: Config = {
       backgroundImage: {
         "gold-sheen":
           "linear-gradient(110deg, #bf7818 0%, #e6b23a 35%, #faf0cf 50%, #e6b23a 65%, #bf7818 100%)",
+        "brand-sheen":
+          "linear-gradient(120deg, #135ccb 0%, #2076e6 45%, #4cc23f 100%)",
+        "brand-radial":
+          "radial-gradient(1200px 600px at 80% -10%, rgba(32,118,230,0.35), transparent), radial-gradient(900px 500px at -10% 20%, rgba(52,168,42,0.18), transparent)",
         "ink-radial":
           "radial-gradient(1200px 600px at 80% -10%, rgba(58,82,144,0.35), transparent), radial-gradient(900px 500px at -10% 20%, rgba(217,152,33,0.12), transparent)",
         "noise":

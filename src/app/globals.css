@@ -84,6 +84,15 @@ body {
     @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-7 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-white/10 hover:border-white/40;
   }
 
+  /* Primary brand button — MPGB blue→green sheen */
+  .btn-brand {
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-brand-sheen px-7 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_-8px_rgba(32,118,230,0.6)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift;
+    background-size: 180% auto;
+  }
+  .btn-brand:hover {
+    background-position: right center;
+  }
+
   .btn-outline-ink {
     @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink-200 px-7 py-3 text-sm font-semibold text-ink-800 transition-all duration-300 hover:border-ink-900 hover:bg-ink-900 hover:text-white;
   }
