@@ -13,7 +13,7 @@ export function ProductCard({ product }: { product: Product }) {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-gold-50/0 via-gold-50/0 to-gold-100/0 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
       <div className="relative flex items-center justify-between">
-        <span className="grid h-14 w-14 place-items-center rounded-2xl bg-ink-900 text-gold-300 transition-all duration-500 group-hover:bg-gold-sheen group-hover:text-ink-900">
+        <span className="grid h-14 w-14 place-items-center rounded-2xl bg-ink-900 text-gold-300 transition-all duration-500 group-hover:bg-gold-sheen group-hover:text-white">
           <Icon className="h-7 w-7" />
         </span>
         <ArrowUpRight className="h-5 w-5 -translate-x-2 translate-y-2 text-gold-500 opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100" />

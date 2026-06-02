@@ -128,7 +128,7 @@ export function EmiCalculator() {
 
             <Link
               href="/apply/personal-loan"
-              className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold-sheen bg-[length:200%_auto] px-6 py-3.5 text-sm font-semibold text-ink-900 shadow-gold transition-all duration-300 hover:bg-right"
+              className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold-sheen bg-[length:200%_auto] px-6 py-3.5 text-sm font-semibold text-white shadow-gold transition-all duration-300 hover:bg-right"
             >
               Apply for this Loan <ArrowRight className="h-4 w-4" />
             </Link>

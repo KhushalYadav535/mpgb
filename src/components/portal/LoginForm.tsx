@@ -71,7 +71,7 @@ export function LoginForm() {
 
       <button
         type="submit"
-        className="flex w-full items-center justify-center gap-2 rounded-full bg-gold-sheen bg-[length:200%_auto] px-6 py-3.5 text-sm font-semibold text-ink-900 shadow-gold transition-all duration-300 hover:bg-right hover:shadow-lift"
+        className="flex w-full items-center justify-center gap-2 rounded-full bg-gold-sheen bg-[length:200%_auto] px-6 py-3.5 text-sm font-semibold text-white shadow-gold transition-all duration-300 hover:bg-right hover:shadow-lift"
       >
         Secure Login <ArrowRight className="h-4 w-4" />
       </button>

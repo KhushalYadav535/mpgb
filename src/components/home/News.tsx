@@ -38,7 +38,7 @@ export function News() {
               <div className="pointer-events-none absolute inset-0 bg-ink-radial opacity-80" />
               <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-gold-500/20 blur-3xl transition-transform duration-700 group-hover:scale-125" />
               <div className="relative">
-                <span className="inline-flex items-center gap-2 rounded-full bg-gold-sheen bg-[length:200%_auto] px-3 py-1 text-xs font-semibold text-ink-900">
+                <span className="inline-flex items-center gap-2 rounded-full bg-gold-sheen bg-[length:200%_auto] px-3 py-1 text-xs font-semibold text-white">
                   {feature.category}
                 </span>
                 <h3 className="mt-6 font-display text-2xl font-bold leading-snug sm:text-3xl">

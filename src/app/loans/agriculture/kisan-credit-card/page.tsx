@@ -89,7 +89,7 @@ export default function KisanCreditCardPage() {
           <Reveal>
             <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-ink-800 to-ink-950 p-8 text-white shadow-card lg:p-10">
               <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-gold-500/20 blur-3xl" />
-              <span className="grid h-14 w-14 place-items-center rounded-2xl bg-gold-sheen bg-[length:200%_auto] text-ink-900">
+              <span className="grid h-14 w-14 place-items-center rounded-2xl bg-gold-sheen bg-[length:200%_auto] text-white">
                 <Sprout className="h-7 w-7" />
               </span>
               <h2 className="mt-6 font-display text-2xl font-bold">

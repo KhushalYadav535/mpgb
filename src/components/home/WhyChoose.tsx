@@ -19,7 +19,7 @@ export function WhyChoose() {
             {whyChooseUs.map((feature, i) => (
               <Reveal key={feature.title} delay={i * 0.08}>
                 <div className="group h-full rounded-2xl border border-ink-100 bg-white p-7 transition-all duration-500 hover:border-gold-200 hover:shadow-card">
-                  <span className="grid h-12 w-12 place-items-center rounded-xl bg-ink-900 text-gold-300 transition-all duration-500 group-hover:bg-gold-sheen group-hover:text-ink-900">
+                  <span className="grid h-12 w-12 place-items-center rounded-xl bg-ink-900 text-gold-300 transition-all duration-500 group-hover:bg-gold-sheen group-hover:text-white">
                     <feature.icon className="h-6 w-6" />
                   </span>
                   <h3 className="mt-5 font-display text-lg font-bold text-ink-900">

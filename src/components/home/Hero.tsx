@@ -20,16 +20,16 @@ const DURATION = 6500;
 
 const themes: Record<HeroSlide["theme"], { base: string; glow: string }> = {
   burgundy: {
-    base: "bg-[radial-gradient(130%_130%_at_20%_0%,#5f0e33_0%,#2a0517_55%,#1a0410_100%)]",
-    glow: "bg-burgundy-500/20",
+    base: "bg-[radial-gradient(130%_130%_at_20%_0%,#143d82_0%,#102f63_55%,#0a1f47_100%)]",
+    glow: "bg-brand-500/25",
   },
   ink: {
     base: "bg-[radial-gradient(130%_130%_at_20%_0%,#1a2647_0%,#0b1226_55%,#060a18_100%)]",
-    glow: "bg-ink-500/25",
+    glow: "bg-brand-500/20",
   },
   emerald: {
     base: "bg-[radial-gradient(130%_130%_at_20%_0%,#0d5440_0%,#06281f_55%,#041a14_100%)]",
-    glow: "bg-emerald/20",
+    glow: "bg-leaf-500/20",
   },
 };
 

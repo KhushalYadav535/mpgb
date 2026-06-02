@@ -22,7 +22,7 @@ body {
 }
 
 ::selection {
-  background: rgba(217, 152, 33, 0.28);
+  background: rgba(32, 118, 230, 0.25);
   color: #0b1226;
 }
 
@@ -35,7 +35,7 @@ body {
   background: #0b1226;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#bf7818, #e6b23a);
+  background: linear-gradient(#135ccb, #34a82a);
   border-radius: 999px;
   border: 2px solid #0b1226;
 }
@@ -45,7 +45,7 @@ body {
     @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
   }
 
-  /* Gold gradient text */
+  /* Brand gradient text (blue → green) */
   .text-gold-gradient {
     @apply bg-gold-sheen bg-clip-text text-transparent;
     background-size: 200% auto;
@@ -71,9 +71,9 @@ body {
     @apply border-t border-ink-100;
   }
 
-  /* Primary luxury button */
+  /* Primary luxury button — MPGB blue→green sheen */
   .btn-gold {
-    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-sheen px-7 py-3 text-sm font-semibold text-ink-900 shadow-gold transition-all duration-300 hover:shadow-lift hover:-translate-y-0.5;
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-sheen px-7 py-3 text-sm font-semibold text-white shadow-gold transition-all duration-300 hover:shadow-lift hover:-translate-y-0.5;
     background-size: 200% auto;
   }
   .btn-gold:hover {
@@ -98,11 +98,11 @@ body {
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold-600;
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-brand-600;
   }
 
   .form-input {
-    @apply w-full rounded-xl border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 outline-none transition-colors placeholder:text-ink-400 focus:border-gold-400 focus:ring-2 focus:ring-gold-100;
+    @apply w-full rounded-xl border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 outline-none transition-colors placeholder:text-ink-400 focus:border-brand-400 focus:ring-2 focus:ring-brand-100;
   }
 }
 

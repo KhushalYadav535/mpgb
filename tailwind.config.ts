@@ -23,18 +23,18 @@ const config: Config = {
           900: "#0b1226",
           950: "#060a18",
         },
-        // Champagne gold — the luxury accent
+        // Accent scale — repurposed to MPGB leaf green (from the logo)
         gold: {
-          50: "#fdf9ed",
-          100: "#faf0cf",
-          200: "#f3df9c",
-          300: "#ecc862",
-          400: "#e6b23a",
-          500: "#d99821",
-          600: "#bf7818",
-          700: "#9f5917",
-          800: "#82461a",
-          900: "#6c3a18",
+          50: "#eefcec",
+          100: "#d6f6d2",
+          200: "#aeeca6",
+          300: "#79dc6e",
+          400: "#4cc23f",
+          500: "#34a82a",
+          600: "#258620",
+          700: "#1f691d",
+          800: "#1d531c",
+          900: "#194619",
         },
         // Burgundy / maroon — premium Indian-bank signature (Axis-inspired)
         burgundy: {
@@ -95,18 +95,19 @@ const config: Config = {
         soft: "0 2px 8px -2px rgba(11, 18, 38, 0.08)",
         card: "0 12px 40px -12px rgba(11, 18, 38, 0.18)",
         lift: "0 24px 60px -20px rgba(11, 18, 38, 0.35)",
-        gold: "0 10px 30px -8px rgba(217, 152, 33, 0.45)",
+        gold: "0 12px 30px -8px rgba(32, 118, 230, 0.45)",
         glow: "0 0 0 1px rgba(255,255,255,0.06), 0 20px 50px -20px rgba(0,0,0,0.5)",
       },
       backgroundImage: {
+        // "gold-sheen" now carries the MPGB blue→green identity site-wide
         "gold-sheen":
-          "linear-gradient(110deg, #bf7818 0%, #e6b23a 35%, #faf0cf 50%, #e6b23a 65%, #bf7818 100%)",
+          "linear-gradient(115deg, #135ccb 0%, #2076e6 38%, #34a82a 78%, #4cc23f 100%)",
         "brand-sheen":
           "linear-gradient(120deg, #135ccb 0%, #2076e6 45%, #4cc23f 100%)",
         "brand-radial":
           "radial-gradient(1200px 600px at 80% -10%, rgba(32,118,230,0.35), transparent), radial-gradient(900px 500px at -10% 20%, rgba(52,168,42,0.18), transparent)",
         "ink-radial":
-          "radial-gradient(1200px 600px at 80% -10%, rgba(58,82,144,0.35), transparent), radial-gradient(900px 500px at -10% 20%, rgba(217,152,33,0.12), transparent)",
+          "radial-gradient(1200px 600px at 80% -10%, rgba(32,118,230,0.32), transparent), radial-gradient(900px 500px at -10% 20%, rgba(52,168,42,0.16), transparent)",
         "noise":
           "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E\")",
       },
