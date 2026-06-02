@@ -4,24 +4,107 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0b1226;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: rgba(217, 152, 33, 0.28);
+  color: #0b1226;
+}
+
+/* Custom scrollbar for the premium feel */
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1226;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#bf7818, #e6b23a);
+  border-radius: 999px;
+  border: 2px solid #0b1226;
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  /* Gold gradient text */
+  .text-gold-gradient {
+    @apply bg-gold-sheen bg-clip-text text-transparent;
+    background-size: 200% auto;
+  }
+
+  /* Glass surface */
+  .glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .glass-light {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(11, 18, 38, 0.06);
+  }
+
+  /* Hairline divider */
+  .hairline {
+    @apply border-t border-ink-100;
+  }
+
+  /* Primary luxury button */
+  .btn-gold {
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-sheen px-7 py-3 text-sm font-semibold text-ink-900 shadow-gold transition-all duration-300 hover:shadow-lift hover:-translate-y-0.5;
+    background-size: 200% auto;
+  }
+  .btn-gold:hover {
+    background-position: right center;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-7 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-white/10 hover:border-white/40;
+  }
+
+  .btn-outline-ink {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink-200 px-7 py-3 text-sm font-semibold text-ink-800 transition-all duration-300 hover:border-ink-900 hover:bg-ink-900 hover:text-white;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold-600;
+  }
+
+  .form-input {
+    @apply w-full rounded-xl border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 outline-none transition-colors placeholder:text-ink-400 focus:border-gold-400 focus:ring-2 focus:ring-gold-100;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .reveal {
+    opacity: 0;
+  }
+  .reveal-in {
+    animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
 }
