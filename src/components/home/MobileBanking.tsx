@@ -7,7 +7,6 @@ import {
   useSpring,
   useTransform,
   useInView,
-  AnimatePresence,
   type MotionValue,
 } from "framer-motion";
 import {
