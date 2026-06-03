@@ -16,23 +16,20 @@ export function Logo({
       aria-label="MPGB Bank home"
     >
       <span className="relative grid h-12 w-12 place-items-center rounded-2xl bg-white shadow-soft ring-1 ring-brand-100 transition-transform duration-500 group-hover:scale-105 overflow-hidden">
-        <img src="/MPGB-logo-Refined.png" alt="MPGB Logo" className="h-full w-full object-contain p-1" />
+        <img src="/logo.jpeg" alt="MPGB Logo" className="h-full w-full object-contain p-1" />
       </span>
-      <span className="flex flex-col leading-none">
-        <span
-          className={cn(
-            "font-display text-lg font-bold tracking-tight",
-            isLight ? "text-white" : "text-brand-800"
-          )}
-        >
-          MPGB<span className="text-leaf-500"> Bank</span>
+      <span className="flex flex-col items-center">
+        <span className="flex w-[260px] sm:w-[320px] h-[56px] sm:h-[68px] items-center rounded-lg overflow-hidden shadow-sm bg-white">
+          <img 
+            src="/MPGB-logo-Refined.png" 
+            alt="MPGB Bank Banner" 
+            className="w-full h-full object-cover object-[center_35%]" 
+          />
         </span>
-        <span
-          className={cn(
-            "mt-1 text-[10px] font-medium uppercase tracking-[0.18em]",
-            isLight ? "text-white/60" : "text-brand-400"
-          )}
-        >
+        <span className={cn(
+          "text-[10px] sm:text-[11px] font-bold tracking-widest mt-1",
+          isLight ? "text-white" : "text-brand-800"
+        )}>
           आपका अपना बैंक
         </span>
       </span>
