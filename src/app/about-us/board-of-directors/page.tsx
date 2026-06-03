@@ -53,7 +53,7 @@ const directorsData = [
     id: 8,
     name: "Shri Nitin Madan",
     position: "Deputy General Manager, RBI, Bhopal",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=800",
+    image: "/nitin.png",
   }
 ];
 
