@@ -1,4 +1,5 @@
 import { Hero } from "@/components/home/Hero";
+import { AnimatedFeatures } from "@/components/home/AnimatedFeatures";
 import { RatesTicker } from "@/components/home/RatesTicker";
 import { TrustBar } from "@/components/home/TrustBar";
 import { Products } from "@/components/home/Products";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <AnimatedFeatures />
       <RatesTicker />
       <TrustBar />
       <Products />

@@ -11,6 +11,7 @@ import {
   Phone,
   Globe,
   ArrowUpRight,
+  MapPin,
 } from "lucide-react";
 import { mainNav } from "@/lib/navigation";
 import { cn } from "@/lib/utils";
@@ -48,15 +49,18 @@ export function Header() {
         )}
       >
         <div className="container-px flex h-10 items-center justify-between text-xs">
-          <div className="flex items-center gap-6">
-            <span className="inline-flex items-center gap-2">
-              <Phone className="h-3.5 w-3.5 text-leaf-300" /> Toll Free: 1800 123 3313
+          <div className="flex items-center gap-4 md:gap-6">
+            <span className="inline-flex items-center gap-1.5">
+              <Phone className="h-3.5 w-3.5 text-leaf-300" /> 1800 123 3313
             </span>
             <span className="text-white/40">|</span>
-            <span>Customer care available 24 × 7</span>
+            <span className="hidden sm:inline-flex items-center gap-1.5 truncate max-w-[200px] md:max-w-md" title="Madhya Pradesh Gramin Bank (MPGB) Head Office, 204, Second Floor, C-21 Business Park, C21 Square, Opposite Hotel Radisson Blu, MR-10, Indore, Madhya Pradesh, 452010">
+              <MapPin className="h-3.5 w-3.5 text-leaf-300 shrink-0" />
+              <span className="truncate">Head Office: 204, C-21 Business Park, MR-10, Indore 452010</span>
+            </span>
           </div>
-          <div className="flex items-center gap-6">
-            <Link href="/customer-service/grievance-redressal" className="transition-colors hover:text-leaf-300">
+          <div className="flex items-center gap-4 md:gap-6">
+            <Link href="/customer-service/grievance-redressal" className="hidden sm:block transition-colors hover:text-leaf-300">
               Grievance Redressal
             </Link>
             <button className="inline-flex items-center gap-1.5 transition-colors hover:text-leaf-300">
