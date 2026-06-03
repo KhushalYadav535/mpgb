@@ -15,7 +15,7 @@ export function LoansShowcase() {
         <SectionHeading
           eyebrow="Lending Solutions"
           title={<span className="text-white">Credit that grows with you</span>}
-          subtitle={<span className="text-ink-300">Whether you're sowing a field, scaling a business or building a home, we have a loan shaped to your journey.</span>}
+          subtitle={<span className="text-ink-300">Whether you&apos;re sowing a field, scaling a business or building a home, we have a loan shaped to your journey.</span>}
         />
 
         <div className="mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
